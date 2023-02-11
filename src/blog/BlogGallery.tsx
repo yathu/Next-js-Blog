@@ -13,6 +13,33 @@ export type IBlogGalleryProps = {
 
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {props.posts.map((elt) => (
+        <Link
+          href="/posts/[slug]"
+          as={`/posts/${elt.slug}`}
+          key={elt.slug}
+          className="mb-3 flex justify-between"
+        >
+          <div>
+            <img
+              src="https://picsum.photos/seed/picsum/600/300"
+              alt="postImg"
+            />
+
+            <div className="flex flex-col">
+              <h2 className="text-lg font-medium  text-gray-900">
+                {elt.title}
+              </h2>
+
+              <span className="text-sm">
+                {format(new Date(elt.date), 'LLL d, yyyy')}
+              </span>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
     <ul>
       {props.posts.map((elt) => (
         <li key={elt.slug} className="mb-3 flex justify-between">
