@@ -1,8 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import Link from 'next/link';
-
-import { Navbar } from '../navigation/Navbar';
+import { CustomNavBar } from '../navigation/Navbar';
 import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
@@ -13,7 +11,7 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
   <div className="antialiased w-full text-gray-700 px-3 md:px-0">
     {props.meta}
-
+    <CustomNavBar />
     <div className="container px-4 mx-auto">
       <div className="border-b border-gray-300">
         <div className="pt-16 pb-8">
@@ -22,25 +20,7 @@ const Main = (props: IMainProps) => (
           </div>
           <div className="text-xl">{AppConfig.description}</div>
         </div>
-        <div>
-          <Navbar>
-            <li className="mr-6">
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link href="/about/">
-                <a>About</a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <a href="https://github.com/ixartz/Next-js-Blog-Boilerplate">
-                GitHub
-              </a>
-            </li>
-          </Navbar>
-        </div>
+        <div></div>
       </div>
 
       <div className="text-xl py-5">{props.children}</div>
