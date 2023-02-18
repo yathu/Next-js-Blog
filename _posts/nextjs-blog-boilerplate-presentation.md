@@ -1,8 +1,8 @@
 ---
 title: Next.js blog Boilerplate Presentation
 description: Everything you need to use this Nextjs Boilerplate template
-date: 2020-06-01
-modified_date: 2020-06-01
+date: Jan 19th 20
+modified_date: Jan 21st 20
 content: t﻿est
 image: /public/assets/images/lets-go.png
 ---
