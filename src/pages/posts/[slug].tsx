@@ -70,7 +70,6 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
 }) => {
   const post = getPostBySlug(params!.slug, [
     'title',
-    'description',
     'date',
     'modified_date',
     'image',

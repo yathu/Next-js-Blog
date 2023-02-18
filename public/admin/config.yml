@@ -13,4 +13,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: 'MMM Do YY'}
       - {label: "Modified Date", name: "modified_date", widget: "datetime", format: 'MMM Do YY'}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "content", widget: "markdown"}
+      - {label: "Featured Image", name: "image", widget: "image", 
+          media_library:
+            config:
+              multiple: false
+        }
