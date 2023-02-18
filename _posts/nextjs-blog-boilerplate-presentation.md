@@ -3,7 +3,7 @@ title: Next.js blog Boilerplate Presentation
 description: Everything you need to use this Nextjs Boilerplate template
 date: Jan 12th 20
 modified_date: Jan 13th 20
-content: t﻿est new
+content: t﻿est new data
 image: /public/assets/images/lets-go.png
 ---
 [![Nextjs starter banner](@@baseUrl@@/assets/images/nextjs-starter-banner.png)](https://creativedesignsguru.com/demo/Nextjs-Blog-Boilerplate/)
