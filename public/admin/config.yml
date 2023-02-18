@@ -11,11 +11,8 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: 'MMM Do YY'}
       - {label: "Modified Date", name: "modified_date", widget: "datetime", format: 'MMM Do YY'}
       - {label: "Body", name: "content", widget: "markdown"}
-      - {label: "Featured Image", name: "image", widget: "image", 
-          media_library:
-            config:
-              multiple: false
-        }
+      - {label: "Featured Image", name: "image", widget: "image", default: public/assets/images/posts}
