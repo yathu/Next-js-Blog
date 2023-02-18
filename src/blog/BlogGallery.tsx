@@ -15,9 +15,11 @@ const BlogGallery = (props: IBlogGalleryProps) => (
     <div className="relative max-w-7xl mx-auto">
       <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         {props.posts.map((post) => (
-          <div
+          <a
+            href="#"
+            //  href={post.href}
             key={post.title}
-            className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+            className="flex flex-col rounded-lg shadow-lg overflow-hidden hover:no-underline"
           >
             <div className="flex-shrink-0">
               <img
@@ -33,17 +35,16 @@ const BlogGallery = (props: IBlogGalleryProps) => (
                     post.category.name
                   </a>
                 </p> */}
-                <a href={post.href} className="block">
-                  <p className="text-xl font-bold text-gray-900">
-                    {post.title}
-                  </p>
-                  <p className="mt-3 text-base text-gray-500">
-                    {post.description}
-                  </p>
-                </a>
+
+                <p className="text-xl font-bold text-gray-900 line-clamp-2">
+                  {post.title}
+                </p>
+                <p className="mt-3 text-base text-gray-500 line-clamp-3">
+                  {post.content}
+                </p>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
