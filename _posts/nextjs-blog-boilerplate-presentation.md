@@ -1,11 +1,10 @@
 ---
-title: 'Next.js blog Boilerplate Presentation'
+title: Next.js blog Boilerplate Presentation
 description: Everything you need to use this Nextjs Boilerplate template
-date: '2020-06-01'
-modified_date: '2020-06-01'
+date: 2020-06-01
+modified_date: 2020-06-01
 image: /assets/images/posts/random-img.jpg
 ---
-
 [![Nextjs starter banner](@@baseUrl@@/assets/images/nextjs-starter-banner.png)](https://creativedesignsguru.com/demo/Nextjs-Blog-Boilerplate/)
 
 ## Next js Blog Boilerplate with Tailwind CSS
@@ -20,48 +19,48 @@ The GitHub repository is located [Next js Blog Boilerplate](https://github.com/i
 
 Blog feature:
 
-- 🎈 Syntax Highlighting with Prism.js
-- 🤖 SEO metadata and Open Graph tags
-- ⚙️ JSON-LD for richer indexing
-- 📖 Pagination
-- 🌈 Include a FREE minimalist blog theme
-- ⬇️ Markdown
-- 💯 Maximize lighthouse score
+* 🎈 Syntax Highlighting with Prism.js
+* 🤖 SEO metadata and Open Graph tags
+* ⚙️ JSON-LD for richer indexing
+* 📖 Pagination
+* 🌈 Include a FREE minimalist blog theme
+* ⬇️ Markdown
+* 💯 Maximize lighthouse score
 
 Developer experience first:
 
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- 💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-- ✏️ Linter with [ESLint](https://eslint.org)
-- 🛠 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
+* 🔥 [Next.js](https://nextjs.org) for Static Site Generator
+* 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
+* 💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
+* 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
+* ✏️ Linter with [ESLint](https://eslint.org)
+* 🛠 Code Formatter with [Prettier](https://prettier.io)
+* 🦊 SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
 
 Built-in feature from Next.js:
 
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
+* ☕ Minify HTML & CSS
+* 💨 Live reload
+* ✅ Cache busting
 
 ### Philosophy
 
-- Minimal code
-- SEO-friendly
-- 🚀 Production-ready
+* Minimal code
+* SEO-friendly
+* 🚀 Production-ready
 
 ### Requirements
 
-- Node.js and npm
+* Node.js and npm
 
 ### Premium Themes ([Nextjs Themes](https://creativedesignsguru.com/category/nextjs/))
 
-| [Blue Dark Nextjs Theme](https://creativedesignsguru.com/blue-dark-nextjs-theme/) | [Blue Eclatant Nextjs Theme](https://creativedesignsguru.com/blue-eclatant-nextjs-theme/) |
-| --- | --- |
+| [Blue Dark Nextjs Theme](https://creativedesignsguru.com/blue-dark-nextjs-theme/)                                                                                                              | [Blue Eclatant Nextjs Theme](https://creativedesignsguru.com/blue-eclatant-nextjs-theme/)                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Blue Dark Nextjs Theme premium](https://creativedesignsguru.com/assets/images/themes/blue-dark-mode-nextjs-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-dark-nextjs-theme/) | [![Blue Eclatant Nextjs Theme premium](https://creativedesignsguru.com/assets/images/themes/eclatant-blue-nextjs-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-eclatant-nextjs-theme/) |
 
-| [Blue Modern Nextjs Theme](https://creativedesignsguru.com/blue-modern-nextjs-theme/) | [Blue Minimalist Nextjs Theme](https://creativedesignsguru.com/blue-minimalist-nextjs-theme/) |
-| --- | --- |
+| [Blue Modern Nextjs Theme](https://creativedesignsguru.com/blue-modern-nextjs-theme/)                                                                                                           | [Blue Minimalist Nextjs Theme](https://creativedesignsguru.com/blue-minimalist-nextjs-theme/)                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Blue Modern Nextjs Theme premium](https://creativedesignsguru.com/assets/images/themes/modern-blue-nextjs-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-modern-nextjs-theme/) | [![Blue Minimalist Nextjs Theme premium](https://creativedesignsguru.com/assets/images/themes/minimalist-blue-nextjs-theme-homepage-xs.png)](https://creativedesignsguru.com/blue-minimalist-nextjs-theme/) |
 
 ### Getting started
@@ -99,15 +98,15 @@ Open http://localhost:8080 with your favorite browser to see your project.
 
 You can easily configure Next js Boilerplate. Please change the following file:
 
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your blog favicon, you can generate from https://favicon.io/favicon-converter/
-- `public/assets/images/logo.png`, `public/assets/images/logo-32x32.png`: your blog logo
-- `src/styles/main.css`: your blog CSS file using Tailwind CSS
-- `src/utils/Config.ts`: configuration file like blog name, url, etc.
-- `src/templates/Main.tsx`: blog theme
+* `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your blog favicon, you can generate from https://favicon.io/favicon-converter/
+* `public/assets/images/logo.png`, `public/assets/images/logo-32x32.png`: your blog logo
+* `src/styles/main.css`: your blog CSS file using Tailwind CSS
+* `src/utils/Config.ts`: configuration file like blog name, url, etc.
+* `src/templates/Main.tsx`: blog theme
 
 ### Deploy to production
 
-You can see the results locally in production mode with:
+You can see the results locally in production mode with: 
 
 ```shell
 $ npm run build
