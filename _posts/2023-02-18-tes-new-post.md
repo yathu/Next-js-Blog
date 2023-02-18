@@ -4,7 +4,7 @@ title: tes new post
 date: 2023-02-18T11:45:46.045Z
 modified_date: 2023-02-18T12:08:52.296Z
 ---
-t﻿est post code wffwfwfw
+t﻿est post code wffwfwfw ss
 
 ```javascript
 function debounce(func, timeout = 300){
