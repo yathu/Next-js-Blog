@@ -29,17 +29,18 @@ const BlogGallery = (props: IBlogGalleryProps) => (
               />
             </div>
             <div className="flex-1 bg-white p-0 flex flex-col justify-between">
-              <div className="flex-1 px-4 py-2">
+              <div className="flex-1 px-5 py-4">
                 {/* <p className="text-sm font-medium text-indigo-600">
                   <a href="#" className="hover:underline">
                     post.category.name
                   </a>
                 </p> */}
 
-                <p className="text-xl font-bold text-gray-900 line-clamp-2">
+                <p className="text-xl font-bold text-gray-900 line-clamp-2 leading-tight">
                   {post.title}
                 </p>
-                <p className="mt-3 text-base text-gray-500 line-clamp-3">
+                <span className="text-sm text-gray-600">{post.date}</span>
+                <p className="mt-2 text-base text-gray-800 line-clamp-3 text-justify">
                   {post.content}
                 </p>
               </div>
