@@ -15,37 +15,42 @@ const BlogGallery = (props: IBlogGalleryProps) => (
     <div className="relative max-w-7xl mx-auto">
       <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
         {props.posts.map((post) => (
-          <a
-            href="#"
-            //  href={post.href}
+          <Link
+            href="/posts/[slug]"
+            as={`/posts/${post.slug}`}
             key={post.title}
-            className="flex flex-col rounded-lg shadow-lg overflow-hidden hover:no-underline"
           >
-            <div className="flex-shrink-0">
-              <img
-                className="h-48 w-full object-cover"
-                src="https://picsum.photos/seed/picsum/600/400"
-                alt=""
-              />
-            </div>
-            <div className="flex-1 bg-white p-0 flex flex-col justify-between">
-              <div className="flex-1 px-5 py-4">
-                {/* <p className="text-sm font-medium text-indigo-600">
+            <a
+              //  href={post.href}
+              key={post.title}
+              className="flex flex-col rounded-lg shadow-lg overflow-hidden hover:no-underline"
+            >
+              <div className="flex-shrink-0">
+                <img
+                  className="h-48 w-full object-cover"
+                  src="https://picsum.photos/seed/picsum/600/400"
+                  alt=""
+                />
+              </div>
+              <div className="flex-1 bg-white p-0 flex flex-col justify-between">
+                <div className="flex-1 px-5 py-4">
+                  {/* <p className="text-sm font-medium text-indigo-600">
                   <a href="#" className="hover:underline">
                     post.category.name
                   </a>
                 </p> */}
 
-                <p className="text-xl font-bold text-gray-900 line-clamp-2 leading-tight">
-                  {post.title}
-                </p>
-                <span className="text-sm text-gray-600">{post.date}</span>
-                <p className="mt-2 text-base text-gray-800 line-clamp-3 text-justify">
-                  {post.content}
-                </p>
+                  <p className="text-xl font-bold text-gray-900 line-clamp-2 leading-tight">
+                    {post.title}
+                  </p>
+                  <span className="text-sm text-gray-600">{post.date}</span>
+                  <p className="mt-2 text-base text-gray-800 line-clamp-3 text-justify">
+                    {post.content}
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </Link>
         ))}
       </div>
     </div>
