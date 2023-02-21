@@ -13,7 +13,7 @@ export type IBlogGalleryProps = {
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <div className="relative max-w-7xl mx-auto">
-      <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+      <div className="mt-4 max-w-lg mx-auto grid gap-5 lg:grid-cols-4 lg:max-w-none">
         {props.posts.map((post) => (
           <Link
             href="/posts/[slug]"
@@ -28,7 +28,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
               <div className="flex-shrink-0">
                 <img
                   className="h-48 w-full object-cover"
-                  src="https://picsum.photos/seed/picsum/600/400"
+                  src={post.image}
                   alt=""
                 />
               </div>
@@ -40,11 +40,11 @@ const BlogGallery = (props: IBlogGalleryProps) => (
                   </a>
                 </p> */}
 
-                  <p className="text-xl font-bold text-gray-900 line-clamp-2 leading-tight">
+                  <p className="text-lg font-bold text-gray-900 line-clamp-2 leading-tight">
                     {post.title}
                   </p>
-                  <span className="text-sm text-gray-600">{post.date}</span>
-                  <p className="mt-2 text-base text-gray-800 line-clamp-3 text-justify">
+                  <span className="text-xs text-gray-700">{post.date}</span>
+                  <p className="mt-2 text-base text-gray-600 line-clamp-2 text-justify">
                     {post.content}
                   </p>
                 </div>
