@@ -28,7 +28,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
               <div className="flex-shrink-0">
                 <img
                   className="h-48 w-full object-cover"
-                  src={post.image}
+                  src={post.image.replace('/public', '')}
                   alt=""
                 />
               </div>
