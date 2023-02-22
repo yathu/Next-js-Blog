@@ -39,8 +39,15 @@ const DisplayPost = (props: IPostProps) => (
     <h1 className="text-center font-bold text-3xl text-gray-900">
       {props.title}
     </h1>
-    <div className="text-center text-sm mb-8">
+    <div className="text-sm mb-8">
       {format(new Date(props.date), 'LLLL d, yyyy')}
+    </div>
+    <div className="flex justify-center max-h-96">
+      <img
+        src={props.image.replace('/public', '')}
+        alt={props.title}
+        className="object-contain"
+      />
     </div>
 
     <Content>

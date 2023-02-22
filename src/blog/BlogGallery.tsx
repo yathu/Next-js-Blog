@@ -43,7 +43,9 @@ const BlogGallery = (props: IBlogGalleryProps) => (
                   <p className="text-lg font-bold text-gray-900 line-clamp-2 leading-tight">
                     {post.title}
                   </p>
+
                   <span className="text-xs text-gray-700">{post.date}</span>
+
                   <p className="mt-2 text-base text-gray-600 line-clamp-2 text-justify">
                     {post.content}
                   </p>
