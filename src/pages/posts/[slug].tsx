@@ -36,26 +36,28 @@ const DisplayPost = (props: IPostProps) => (
       />
     }
   >
-    <h1 className="text-center font-bold text-3xl text-gray-900">
-      {props.title}
-    </h1>
-    <div className="text-sm mb-8">
-      {format(new Date(props.date), 'LLLL d, yyyy')}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <div className="lg:col-span-2">
+        <h1 className="font-bold text-3xl text-gray-900">{props.title}</h1>
+        <div className="text-sm mb-8">
+          {format(new Date(props.date), 'LLLL d, yyyy')}
+        </div>
+        <div className="flex justify-center max-h-96">
+          <img
+            src={props.image.replace('/public', '')}
+            alt={props.title}
+            className="object-cover w-full"
+          />
+        </div>
+        <Content>
+          <div
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: props.content }}
+          />
+        </Content>
+      </div>
+      <div className="bg-gray-100"></div>
     </div>
-    <div className="flex justify-center max-h-96">
-      <img
-        src={props.image.replace('/public', '')}
-        alt={props.title}
-        className="object-contain"
-      />
-    </div>
-
-    <Content>
-      <div
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: props.content }}
-      />
-    </Content>
   </Main>
 );
 
